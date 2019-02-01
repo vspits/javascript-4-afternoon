@@ -59,15 +59,13 @@ mustang.moveCar(); // Increments mustang' move property by 10. Returns the new m
 */
 
 // Code here
-class Car {
-  constructor(make, model, year){
-    this.make = make
-    this.model = model
-    this.year = year
-  }
+function Car (make, model, year){
+  this.make = make
+  this.model = model
+  this.year = year
+  this.move = 0
 
-  moveCar(){
-    
+  this.moveCar = () => {
+    return this.move += 10
   }
 }
-
